@@ -231,18 +231,15 @@ final class AXPositionTracker {
 // MARK: - Coordinate helper
 
 extension CGRect {
-    /// Convert a CG-coordinate rect (origin top-left) to an AppKit NSRect (origin bottom-left).
+    /// Convert a CG-coordinate rect (origin top-left of main screen) to an
+    /// AppKit NSRect (origin bottom-left of main screen).
+    ///
+    /// AppKit's unified coordinate space always uses the main screen height as
+    /// the Y reference — even for windows on secondary monitors.
     static func cgToAppKit(_ rect: CGRect) -> NSRect {
-        // Use the screen that contains the rect's top-left corner.
-        let cgTopLeft = CGPoint(x: rect.minX, y: rect.minY)
-        let screenH   = NSScreen.screens
-            .first(where: { s in
-                // CG and NS share the same x-axis; only y flips.
-                s.frame.minX <= cgTopLeft.x && cgTopLeft.x < s.frame.maxX
-            })?.frame.height
-            ?? NSScreen.main?.frame.height ?? 0
+        let mainH = NSScreen.main?.frame.height ?? 0
         return NSRect(x: rect.minX,
-                      y: screenH - rect.maxY,
+                      y: mainH - rect.maxY,
                       width: rect.width,
                       height: rect.height)
     }

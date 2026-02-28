@@ -46,7 +46,15 @@ final class WindowCaptureSession: NSObject {
     private func startStream(scWindow: SCWindow) async throws {
         let filter = SCContentFilter(desktopIndependentWindow: scWindow)
 
-        let scale  = NSScreen.main?.backingScaleFactor ?? 2.0
+        // Use the scale of the screen that contains the window, not necessarily main.
+        let mainH  = NSScreen.main?.frame.height ?? 0
+        let winNSRect = NSRect(x: scWindow.frame.minX,
+                               y: mainH - scWindow.frame.maxY,
+                               width: scWindow.frame.width,
+                               height: scWindow.frame.height)
+        let scale  = NSScreen.screens
+            .first(where: { $0.frame.intersects(winNSRect) })?
+            .backingScaleFactor ?? NSScreen.main?.backingScaleFactor ?? 2.0
         let config = SCStreamConfiguration()
         config.width         = max(1, Int(scWindow.frame.width  * scale))
         config.height        = max(1, Int(scWindow.frame.height * scale))
