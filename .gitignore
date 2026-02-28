@@ -1,3 +1,7 @@
+# Icon generation (build-time artefacts)
+make_icon.swift
+TopPin.iconset/
+
 # Xcode
 *.xcuserstate
 xcuserdata/
