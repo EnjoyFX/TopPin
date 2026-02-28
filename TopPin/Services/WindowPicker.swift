@@ -170,9 +170,10 @@ final class PickerContentView: NSView {
         // Convert AppKit coords (bottom-left origin) → CG coords (top-left origin)
         let winPoint    = event.locationInWindow
         let screenPoint = window?.convertPoint(toScreen: winPoint) ?? winPoint
-        let screenH     = NSScreen.screens.first(where: { $0.frame.contains(screenPoint) })?.frame.height
-                         ?? NSScreen.main?.frame.height ?? 0
-        let cgPoint     = CGPoint(x: screenPoint.x, y: screenH - screenPoint.y)
+        let primaryH    = NSScreen.screens
+                             .first(where: { $0.frame.origin == .zero })?.frame.height
+                             ?? NSScreen.main?.frame.height ?? 0
+        let cgPoint     = CGPoint(x: screenPoint.x, y: primaryH - screenPoint.y)
         onPick?(cgPoint)
     }
 

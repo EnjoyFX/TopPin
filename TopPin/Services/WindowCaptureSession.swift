@@ -47,9 +47,11 @@ final class WindowCaptureSession: NSObject {
         let filter = SCContentFilter(desktopIndependentWindow: scWindow)
 
         // Use the scale of the screen that contains the window, not necessarily main.
-        let mainH  = NSScreen.main?.frame.height ?? 0
+        let primaryH = NSScreen.screens
+            .first(where: { $0.frame.origin == .zero })?.frame.height
+            ?? NSScreen.main?.frame.height ?? 0
         let winNSRect = NSRect(x: scWindow.frame.minX,
-                               y: mainH - scWindow.frame.maxY,
+                               y: primaryH - scWindow.frame.maxY,
                                width: scWindow.frame.width,
                                height: scWindow.frame.height)
         let scale  = NSScreen.screens
