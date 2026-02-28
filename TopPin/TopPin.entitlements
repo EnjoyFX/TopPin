@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!--
+        TopPin only requires app-sandbox disabled so it can:
+        - Observe other apps via Accessibility (AXUIElement)
+        - Register global hotkeys via Carbon
+        No network access, no file system entitlements are needed.
+    -->
+    <key>com.apple.security.app-sandbox</key>
+    <false/>
+
+    <!-- Allows calling AX APIs on other processes -->
+    <key>com.apple.security.automation.apple-events</key>
+    <false/>
+</dict>
+</plist>

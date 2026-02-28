@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEADBEEF000000000000003E /* ScreenCapturePermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF000000000000003D /* ScreenCapturePermissionManager.swift */; };
+		DEADBEEF0000000000000040 /* WindowCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF000000000000003F /* WindowCaptureSession.swift */; };
+		DEADBEEF0000000000000042 /* FloatingOverlayWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000041 /* FloatingOverlayWindowController.swift */; };
+		DEADBEEF0000000000000044 /* ScreenCaptureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000043 /* ScreenCaptureKit.framework */; };
+		DEADBEEF0000000000000021 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000020 /* main.swift */; };
+		DEADBEEF0000000000000023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000022 /* AppDelegate.swift */; };
+		DEADBEEF0000000000000025 /* WindowRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000024 /* WindowRef.swift */; };
+		DEADBEEF0000000000000027 /* WindowIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000026 /* WindowIdentity.swift */; };
+		DEADBEEF0000000000000029 /* AccessibilityPermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000028 /* AccessibilityPermissionManager.swift */; };
+		DEADBEEF000000000000002B /* HotkeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF000000000000002A /* HotkeyManager.swift */; };
+		DEADBEEF000000000000002D /* WindowEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF000000000000002C /* WindowEnumerator.swift */; };
+		DEADBEEF000000000000002F /* WindowPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF000000000000002E /* WindowPicker.swift */; };
+		DEADBEEF0000000000000031 /* PinnedWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000030 /* PinnedWindowController.swift */; };
+		DEADBEEF0000000000000033 /* PreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000032 /* PreferencesStore.swift */; };
+		DEADBEEF0000000000000035 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000034 /* StatusBarController.swift */; };
+		DEADBEEF0000000000000037 /* WindowListWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000036 /* WindowListWindowController.swift */; };
+		DEADBEEF0000000000000039 /* PermissionWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000038 /* PermissionWindowController.swift */; };
+		DEADBEEF000000000000003B /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF000000000000003A /* PreferencesWindowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DEADBEEF0000000000000043 /* ScreenCaptureKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenCaptureKit.framework; path = System/Library/Frameworks/ScreenCaptureKit.framework; sourceTree = SDKROOT; };
+		DEADBEEF000000000000003D /* ScreenCapturePermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCapturePermissionManager.swift; sourceTree = "<group>"; };
+		DEADBEEF000000000000003F /* WindowCaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCaptureSession.swift; sourceTree = "<group>"; };
+		DEADBEEF0000000000000041 /* FloatingOverlayWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingOverlayWindowController.swift; sourceTree = "<group>"; };
+		DEADBEEF000000000000000E /* TopPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEADBEEF000000000000000F /* TopPin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TopPin.entitlements; sourceTree = "<group>"; };
+		DEADBEEF0000000000000020 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DEADBEEF0000000000000022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEADBEEF0000000000000024 /* WindowRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowRef.swift; sourceTree = "<group>"; };
+		DEADBEEF0000000000000026 /* WindowIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowIdentity.swift; sourceTree = "<group>"; };
+		DEADBEEF0000000000000028 /* AccessibilityPermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityPermissionManager.swift; sourceTree = "<group>"; };
+		DEADBEEF000000000000002A /* HotkeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyManager.swift; sourceTree = "<group>"; };
+		DEADBEEF000000000000002C /* WindowEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowEnumerator.swift; sourceTree = "<group>"; };
+		DEADBEEF000000000000002E /* WindowPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowPicker.swift; sourceTree = "<group>"; };
+		DEADBEEF0000000000000030 /* PinnedWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedWindowController.swift; sourceTree = "<group>"; };
+		DEADBEEF0000000000000032 /* PreferencesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesStore.swift; sourceTree = "<group>"; };
+		DEADBEEF0000000000000034 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		DEADBEEF0000000000000036 /* WindowListWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowListWindowController.swift; sourceTree = "<group>"; };
+		DEADBEEF0000000000000038 /* PermissionWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionWindowController.swift; sourceTree = "<group>"; };
+		DEADBEEF000000000000003A /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		DEADBEEF000000000000003C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEADBEEF000000000000000C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEADBEEF0000000000000044 /* ScreenCaptureKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEADBEEF0000000000000045 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEADBEEF0000000000000043 /* ScreenCaptureKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEADBEEF0000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				DEADBEEF0000000000000010 /* TopPin */,
+				DEADBEEF0000000000000003 /* Products */,
+				DEADBEEF0000000000000045 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DEADBEEF0000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEADBEEF000000000000000E /* TopPin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEADBEEF0000000000000010 /* TopPin */ = {
+			isa = PBXGroup;
+			children = (
+				DEADBEEF0000000000000020 /* main.swift */,
+				DEADBEEF0000000000000022 /* AppDelegate.swift */,
+				DEADBEEF000000000000003C /* Info.plist */,
+				DEADBEEF000000000000000F /* TopPin.entitlements */,
+				DEADBEEF0000000000000011 /* Models */,
+				DEADBEEF0000000000000012 /* Services */,
+				DEADBEEF0000000000000013 /* UI */,
+			);
+			path = TopPin;
+			sourceTree = "<group>";
+		};
+		DEADBEEF0000000000000011 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEADBEEF0000000000000024 /* WindowRef.swift */,
+				DEADBEEF0000000000000026 /* WindowIdentity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEADBEEF0000000000000012 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DEADBEEF0000000000000028 /* AccessibilityPermissionManager.swift */,
+				DEADBEEF000000000000002A /* HotkeyManager.swift */,
+				DEADBEEF000000000000002C /* WindowEnumerator.swift */,
+				DEADBEEF000000000000002E /* WindowPicker.swift */,
+				DEADBEEF0000000000000030 /* PinnedWindowController.swift */,
+				DEADBEEF0000000000000032 /* PreferencesStore.swift */,
+				DEADBEEF000000000000003D /* ScreenCapturePermissionManager.swift */,
+				DEADBEEF000000000000003F /* WindowCaptureSession.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DEADBEEF0000000000000013 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DEADBEEF0000000000000034 /* StatusBarController.swift */,
+				DEADBEEF0000000000000036 /* WindowListWindowController.swift */,
+				DEADBEEF0000000000000038 /* PermissionWindowController.swift */,
+				DEADBEEF000000000000003A /* PreferencesWindowController.swift */,
+				DEADBEEF0000000000000041 /* FloatingOverlayWindowController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEADBEEF0000000000000004 /* TopPin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEADBEEF0000000000000008 /* Build configuration list for PBXNativeTarget "TopPin" */;
+			buildPhases = (
+				DEADBEEF000000000000000B /* Sources */,
+				DEADBEEF000000000000000C /* Frameworks */,
+				DEADBEEF000000000000000D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TopPin;
+			productName = TopPin;
+			productReference = DEADBEEF000000000000000E /* TopPin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEADBEEF0000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DEADBEEF0000000000000004 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = DEADBEEF0000000000000005 /* Build configuration list for PBXProject "TopPin" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEADBEEF0000000000000002;
+			productRefGroup = DEADBEEF0000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEADBEEF0000000000000004 /* TopPin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEADBEEF000000000000000D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEADBEEF000000000000000B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEADBEEF000000000000003E /* ScreenCapturePermissionManager.swift in Sources */,
+				DEADBEEF0000000000000040 /* WindowCaptureSession.swift in Sources */,
+				DEADBEEF0000000000000042 /* FloatingOverlayWindowController.swift in Sources */,
+				DEADBEEF0000000000000021 /* main.swift in Sources */,
+				DEADBEEF0000000000000023 /* AppDelegate.swift in Sources */,
+				DEADBEEF0000000000000025 /* WindowRef.swift in Sources */,
+				DEADBEEF0000000000000027 /* WindowIdentity.swift in Sources */,
+				DEADBEEF0000000000000029 /* AccessibilityPermissionManager.swift in Sources */,
+				DEADBEEF000000000000002B /* HotkeyManager.swift in Sources */,
+				DEADBEEF000000000000002D /* WindowEnumerator.swift in Sources */,
+				DEADBEEF000000000000002F /* WindowPicker.swift in Sources */,
+				DEADBEEF0000000000000031 /* PinnedWindowController.swift in Sources */,
+				DEADBEEF0000000000000033 /* PreferencesStore.swift in Sources */,
+				DEADBEEF0000000000000035 /* StatusBarController.swift in Sources */,
+				DEADBEEF0000000000000037 /* WindowListWindowController.swift in Sources */,
+				DEADBEEF0000000000000039 /* PermissionWindowController.swift in Sources */,
+				DEADBEEF000000000000003B /* PreferencesWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DEADBEEF0000000000000006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEADBEEF0000000000000007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DEADBEEF0000000000000009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TopPin/TopPin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TopPin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.TopPin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5;
+			};
+			name = Debug;
+		};
+		DEADBEEF000000000000000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TopPin/TopPin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TopPin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.TopPin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEADBEEF0000000000000005 /* Build configuration list for PBXProject "TopPin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEADBEEF0000000000000006 /* Debug */,
+				DEADBEEF0000000000000007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEADBEEF0000000000000008 /* Build configuration list for PBXNativeTarget "TopPin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEADBEEF0000000000000009 /* Debug */,
+				DEADBEEF000000000000000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = DEADBEEF0000000000000001 /* Project object */;
+}

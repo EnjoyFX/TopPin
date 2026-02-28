@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Bundle identity -->
+    <key>CFBundleIdentifier</key>
+    <string>com.example.TopPin</string>
+
+    <key>CFBundleName</key>
+    <string>TopPin</string>
+
+    <key>CFBundleDisplayName</key>
+    <string>TopPin</string>
+
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+
+    <key>CFBundleExecutable</key>
+    <string>TopPin</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <key>CFBundleSignature</key>
+    <string>????</string>
+
+    <!-- Minimum macOS version: Ventura (13.0) -->
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+
+    <!-- Hide from Dock – app lives only in the menu bar -->
+    <key>LSUIElement</key>
+    <true/>
+
+    <!-- Required for Accessibility API usage -->
+    <key>NSAccessibilityUsageDescription</key>
+    <string>TopPin uses Accessibility to keep a selected window on top of others. Without this permission the app cannot function.</string>
+
+    <!-- Required for ScreenCaptureKit (live window mirroring – preferred "always on top" method) -->
+    <key>NSScreenCaptureDescription</key>
+    <string>TopPin captures a live stream of the selected window to display it in a floating overlay. This is the most reliable way to keep a window always on top without focus stealing or blinking.</string>
+
+    <!-- Suppress the default document-based architecture -->
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+
+    <!-- Human-readable copyright -->
+    <key>NSHumanReadableCopyright</key>
+    <string>© 2024 TopPin contributors. MIT License.</string>
+
+    <!-- Supported interface languages -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+
+    <key>CFBundleSupportedPlatforms</key>
+    <array>
+        <string>MacOSX</string>
+    </array>
+</dict>
+</plist>
