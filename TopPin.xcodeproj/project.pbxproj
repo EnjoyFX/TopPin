@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEADBEEF0000000000000047 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000046 /* AppIcon.icns */; };
 		DEADBEEF000000000000003E /* ScreenCapturePermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF000000000000003D /* ScreenCapturePermissionManager.swift */; };
 		DEADBEEF0000000000000040 /* WindowCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF000000000000003F /* WindowCaptureSession.swift */; };
 		DEADBEEF0000000000000042 /* FloatingOverlayWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000041 /* FloatingOverlayWindowController.swift */; };
@@ -49,6 +50,7 @@
 		DEADBEEF0000000000000038 /* PermissionWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionWindowController.swift; sourceTree = "<group>"; };
 		DEADBEEF000000000000003A /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		DEADBEEF000000000000003C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEADBEEF0000000000000046 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				DEADBEEF0000000000000022 /* AppDelegate.swift */,
 				DEADBEEF000000000000003C /* Info.plist */,
 				DEADBEEF000000000000000F /* TopPin.entitlements */,
+				DEADBEEF0000000000000046 /* AppIcon.icns */,
 				DEADBEEF0000000000000011 /* Models */,
 				DEADBEEF0000000000000012 /* Services */,
 				DEADBEEF0000000000000013 /* UI */,
@@ -196,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEADBEEF0000000000000047 /* AppIcon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
